@@ -1,0 +1,16 @@
+<html>
+    <head>
+    </head>
+
+    <body>
+Auto-escaping is on by default Hello{{name}}
+
+{% autoescape off %}
+
+    This will not be auto-auto-escaped{{data}}
+    { %autoescape on %}
+    Auto-escaping applied again:{{name}}
+    {% endautoescape %}
+{% endautoescape %}
+</body>
+</html>

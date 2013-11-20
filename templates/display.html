@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title%}Display Information {%endblock%}
+
+{%block content%}
+<table id=showmeta>
+
+
+{%for key in values%}
+<tr>
+<td>{{key}}</td>
+</tr>
+{%endfor%}
+
+</table>
+{%endblock%}
